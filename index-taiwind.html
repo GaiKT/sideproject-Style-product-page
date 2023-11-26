@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Montserrat" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Montserra" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body class="bg-[#F2EBE3] flex flex-row justify-center items-center h-screen w-screen max-sm:p-5" style="font-family:Fraunces,serif;">
+  <main class="flex flex-row h-5/6 w-3/6 justify-center items-center max-sm:h-full max-sm:w-full max-sm:flex-col my-5">
+    <div class="flex-1 h-full w-full min-w-[240px]  max-sm:hidden">
+      <img src="./images/image-product-desktop.jpg" alt="image-product-desktop" class="h-full w-full rounded-l-3xl">
+    </div>
+    <div class="h-2/5 w-full hidden max-sm:block">
+      <img src="./images/image-product-mobile.jpg" alt="image-product-mobile" class=" h-full w-full rounded-t-3xl">
+    </div>
+    <div class="flex-1 flex flex-col justify-between min-w-[240px] bg-white items-start h-full w-full pl-10 py-16 sm:rounded-r-3xl max-sm:flex-1 max-sm:rounded-b-3xl">
+      <span class="text-start text-gray-400 font-extralight w-3/5" style="font-family:Montserra,sans-serif;">P E R F U M E</span>
+      <h1 class="text-4xl font-extrabold w-3/5 ">Gabrielle Essence Eau De Parfum</h1>
+      <p class="text-sm w-4/5 pr-5 text-gray-400 font-extralight" style="font-family:Montserra,sans-serif;">  A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <span class="flex flex-row font-extrabold text-4xl w-4/5 justify-around items-center px-3 text-[#3C8067]">
+        $149.99 
+        <span class="font-extralight text-base text-gray-400 line-through">$169.99</span>
+      </span>
+      <button class=" bg-[#3C8067] w-4/5 rounded-lg h-12 text-white">
+        <img src="./images/icon-cart.svg" alt="Cart" class="inline mr-3"><span class="inline">Add to Cart</span>
+      </button>
+    </div>
+  </main>
+</body>
+</html>
+
